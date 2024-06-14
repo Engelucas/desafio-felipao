@@ -1,0 +1,26 @@
+let heroi = {
+    nome: "Exemplo de Herói",
+    xp: 8500
+};
+
+let mensagem;
+
+if (heroi.xp < 1000) {
+    mensagem = "Ferro";
+} else if (heroi.xp >= 1001 && heroi.xp <= 2000) {
+    mensagem = "Bronze";
+} else if (heroi.xp >= 2001 && heroi.xp <= 5000) {
+    mensagem = "Prata";
+} else if (heroi.xp >= 5001 && heroi.xp <= 8000) {
+    mensagem = "Platina";
+} else if (heroi.xp >= 8001 && heroi.xp <= 9000) {
+    mensagem = "Ascendente";
+} else if (heroi.xp >= 9001 && heroi.xp <= 10000) {
+    mensagem = "Imortal";
+} else if (heroi.xp >= 10001) {
+    mensagem = "Radiante";
+} else {
+    mensagem = "Nível desconhecido";
+}
+
+console.log(`O herói ${heroi.nome} está no nível ${mensagem}.`);
